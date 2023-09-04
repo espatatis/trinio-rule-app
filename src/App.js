@@ -10,9 +10,6 @@ import {
 import Box from '@mui/material/Box'
 import Radio from '@mui/material/Radio'
 import RadioGroup from '@mui/material/RadioGroup'
-// import FormControlLabel from '@mui/material/FormControlLabel'
-// import FormControl from '@mui/material/FormControl'
-// import FormLabel from '@mui/material/FormLabel'
 import Tab from '@mui/material/Tab'
 import AddIcon from '@mui/icons-material/Add'
 import TabContext from '@mui/lab/TabContext'
@@ -46,7 +43,6 @@ function App() {
     'GRANT_SELECT',
   ]
   const handleAddTableRule = () => {
-    // console.log(tableRules)
     if (
       !('tablePrivilege' in tableRules[tableRules.length - 1]) ||
       tableRules[tableRules.length - 1].tablePrivilege.length === 0
@@ -101,10 +97,6 @@ function App() {
     const newRules = [...tableRules]
     newRules[index][field] = value
     setTableRules(newRules)
-    // console.log(tableRules)
-    // console.log(schemaRules)
-    // console.log(Object.keys(schemaRules[schemaRules.length - 1]).length)
-    // console.log(catalogueRules)
   }
 
   const handleSchemaRuleChange = (index, field, value) => {
@@ -148,7 +140,6 @@ function App() {
     let newTableRules = tableRules
     let newSchemaRules = schemaRules
     let newCatalogueRules = catalogueRules
-    // console.log(schemaRules)
     if (
       tableRules.length > 0 &&
       Object.keys(tableRules[tableRules.length - 1]).length === 0
