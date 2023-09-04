@@ -10,7 +10,7 @@ You can use Docker for a smooth setup
 
 ### Steps
 
-1. In order to run this container you'll need docker installed.
+1. In order to run this app locally you'll need docker installed.
 
 * [Windows](https://docs.docker.com/windows/started)
 * [OS X](https://docs.docker.com/mac/started/)
